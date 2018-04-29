@@ -46,9 +46,10 @@ class ActivityModule(private val activity: BaseActivity) {
     @Provides
     @ActivityScope
     fun provideAuthPresenter(@ActivityContext context: Context,
+                             userPreferences: UserPreferences,
                              schedulerProvider: SchedulerProvider,
                              compositeDisposable: CompositeDisposable): AuthPresenter<AuthContract.View> {
-        return AuthPresenter(context, schedulerProvider, compositeDisposable)
+        return AuthPresenter(context, userPreferences, schedulerProvider, compositeDisposable)
     }
 
     @Provides

@@ -1,33 +1,131 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.auth.AuthActivity">
-
-    <android.support.design.widget.AppBarLayout
+    android:layout_height="match_parent" >
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:paddingBottom="34dp"
+            android:orientation="vertical">
 
-    </android.support.design.widget.AppBarLayout>
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_logo"/>
 
-    <include layout="@layout/content_auth" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Header"
+                android:text="@string/sign_in_authorization"/>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+            <LinearLayout
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:paddingBottom="18dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:orientation="vertical"
+                android:gravity="start"
+                style="@style/AppTheme.Container.Card">
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in_id"
+                    android:labelFor="@+id/sign_in_id"
+                    />
 
-</android.support.design.widget.CoordinatorLayout>
+                <EditText
+                    style="@style/FormField"
+                    android:id="@+id/sign_in_id"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    />
+                <LinearLayout
+                    android:id="@+id/id_error_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="start|center">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/ic_error_exclamation"/>
+                    <TextView
+                        android:id="@+id/identificator_error_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textBlack"
+                        android:textSize="14sp"
+                        android:text="Id incorrect" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in_password"
+                    android:labelFor="@+id/sign_in_password"
+                    />
+
+                <EditText
+                    style="@style/FormField"
+                    android:id="@+id/sign_in_password"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/password_error_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="start|center">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/ic_error_exclamation"/>
+                    <TextView
+                        android:id="@+id/password_error_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textBlack"
+                        android:textSize="14sp"
+                        android:text="@string/password_incorrect" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/sign_in_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    style="@style/Button.Main"
+                    android:text="@string/sign_in_sign_in" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

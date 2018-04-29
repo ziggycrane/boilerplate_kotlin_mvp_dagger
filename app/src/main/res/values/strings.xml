@@ -5,4 +5,14 @@
     <string name="some_error_happened">Some error happened</string>
     <string name="close">Close</string>
     <string name="homework">Homework</string>
+    <string name="sign_in_authorization">Authorization</string>
+    <string name="sign_in_id">ID</string>
+    <string name="sign_in_password">Password</string>
+    <string name="password_incorrect">Password incorrect</string>
+    <string name="sign_in_sign_in">Sign in</string>
+
+    <string name="sign_in_empty_id">Please provide a non empty id.</string>
+    <string name="sign_in_empty_password">Please provide a non empty password.</string>
+    <string name="sign_in_id_incorrect">ID or password incorrect</string>
+    <string name="no_internet_connection">No internet connection, try again later</string>
 </resources>
