@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.di.modules
+package com.ziggycrane.blueorange.di.modules.app
 
 import android.app.Application
 import android.content.SharedPreferences
@@ -22,7 +22,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 @Module
 class ApiModule// Constructor needs one parameter to instantiate.
-(internal var baseUrl: String) {
+(private var baseUrl: String) {
 
     // Dagger will only look for methods annotated with @Provides
     @Provides

@@ -14,8 +14,8 @@ constructor(val schedulerProvider: SchedulerProvider,
     val isViewAttached: Boolean
         get() = mvpView != null
 
-    override fun onAttach(mvpView: V) {
-        this.mvpView = mvpView
+    override fun onAttach(screen: V) {
+        this.mvpView = screen
     }
 
     override fun onDetach() {

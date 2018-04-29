@@ -1,23 +1,29 @@
 package com.ziggycrane.blueorange.ui.auth
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity
+import butterknife.ButterKnife
 import com.ziggycrane.blueorange.R
+import com.ziggycrane.blueorange.ui.base.BaseActivity
+import javax.inject.Inject
 
-import kotlinx.android.synthetic.main.activity_auth.*
+class AuthActivity: BaseActivity(), AuthContract.View {
 
-class AuthActivity : AppCompatActivity() {
+    @Inject
+    lateinit var presenter: AuthPresenter<AuthContract.View>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
-        setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
+        activityComponent.inject(this)
+
+        setUnBinder(ButterKnife.bind(this))
+
+        presenter.onAttach(this@AuthActivity)
+    }
+
+    override fun setUp() {
+
     }
 
 }

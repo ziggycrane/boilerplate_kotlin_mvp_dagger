@@ -41,11 +41,11 @@ class ErrorDialogFragment : BaseDialog(), ErrorDialogContract.View {
         val component = activityComponent
         if (component != null) {
 
-            component!!.inject(this)
+            component.inject(this)
 
             setUnBinder(ButterKnife.bind(this, view))
 
-            presenter!!.onAttach(this)
+            presenter.onAttach(this)
         }
 
         return view
@@ -65,11 +65,11 @@ class ErrorDialogFragment : BaseDialog(), ErrorDialogContract.View {
     }
 
     override fun setUp(view: View) {
-        errorMessageView!!.text = message
+        errorMessageView.text = message
     }
 
     override fun onDestroyView() {
-        presenter!!.onDetach()
+        presenter.onDetach()
         super.onDestroyView()
     }
 

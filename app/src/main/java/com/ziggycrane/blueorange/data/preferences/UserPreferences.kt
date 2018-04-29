@@ -22,7 +22,7 @@ class UserPreferences {
     }
 
 
-    fun getLoggedIn(): Boolean? {
+    fun getLoggedIn(): Boolean {
         return prefs.getBoolean(PREF_KEY_USER_LOGGED_IN, false)
     }
 

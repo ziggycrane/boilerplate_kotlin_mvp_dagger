@@ -1,29 +1,45 @@
 package com.ziggycrane.blueorange.ui.splash
 
 import android.content.Context
-import com.ziggycrane.blueorange.data.preferences.BasePreferences
+import android.os.Handler
 import com.ziggycrane.blueorange.data.preferences.UserPreferences
 import com.ziggycrane.blueorange.di.ActivityContext
-import com.ziggycrane.blueorange.ui.auth.SplashContract
 import com.ziggycrane.blueorange.ui.base.BasePresenter
 import com.ziggycrane.blueorange.utils.rx.SchedulerProvider
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 
-class SplashPresenter<V : SplashContract.View>
-
-    @Inject
+class SplashPresenter<V : SplashContract.View> @Inject
     constructor(@param:ActivityContext private val context: Context,
-                internal var basePreferences: BasePreferences,
-                internal var userPreferences: UserPreferences,
+                private var userPreferences: UserPreferences,
                 schedulerProvider: SchedulerProvider,
                 compositeDisposable: CompositeDisposable) : BasePresenter<V>(schedulerProvider, compositeDisposable), SplashContract.Presenter<V> {
 
-    override fun onAttach(mvpView: V) {
-        super.onAttach(mvpView)
+    override fun onAttach(screen: V) {
+        super.onAttach(screen)
+
+        Handler().postDelayed(SplashRunnable(), 1500)
+    }
+
+    private fun decideNextActivity() {
+        if (userPreferences.getLoggedIn()) {
+            mvpView!!.openMainActivity()
+        } else {
+            mvpView!!.openLoginActivity()
+        }
+    }
+
+    inner class SplashRunnable : Runnable {
+        override fun run() {
+            if (!isViewAttached) {
+                return
+            }
+
+            decideNextActivity()
+        }
     }
 
     companion object {
-        private val TAG = "DashboardPresenter"
+        private val TAG = "SplashPresenter"
     }
 }

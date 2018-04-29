@@ -8,8 +8,9 @@ import com.ziggycrane.blueorange.data.network.clients.AccountClient
 import com.ziggycrane.blueorange.data.preferences.BasePreferences
 import com.ziggycrane.blueorange.data.preferences.UserPreferences
 import com.ziggycrane.blueorange.di.AppContext
-import com.ziggycrane.blueorange.di.modules.ApiModule
-import com.ziggycrane.blueorange.di.modules.ApplicationModule
+import com.ziggycrane.blueorange.di.modules.activity.ActivityModule
+import com.ziggycrane.blueorange.di.modules.app.ApiModule
+import com.ziggycrane.blueorange.di.modules.app.ApplicationModule
 import com.ziggycrane.blueorange.di.qualifiers.BackgroundThread
 import com.ziggycrane.blueorange.di.qualifiers.MainThread
 import com.ziggycrane.blueorange.di.scopes.AppScope
@@ -18,10 +19,10 @@ import dagger.Component
 import io.reactivex.disposables.CompositeDisposable
 
 @AppScope
-@Component(modules = [(ApplicationModule::class), (ApiModule::class)])
+@Component(modules = [ApplicationModule::class, ApiModule::class, ActivityModule::class])
 interface ApplicationComponent {
-    fun inject(app: BlueOrangeApplication)
 
+    fun inject(app: BlueOrangeApplication)
 
     @AppContext
     fun getContext(): Context
@@ -29,7 +30,6 @@ interface ApplicationComponent {
     fun application(): BlueOrangeApplication
 
     fun getCompositeDisposable(): CompositeDisposable
-
     fun getScheduleProvider(): SchedulerProvider
 
     fun getGson(): Gson

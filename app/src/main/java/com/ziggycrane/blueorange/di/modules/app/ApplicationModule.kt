@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.di.modules
+package com.ziggycrane.blueorange.di.modules.app
 
 import android.app.Application
 import android.content.Context

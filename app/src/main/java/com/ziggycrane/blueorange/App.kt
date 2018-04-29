@@ -3,8 +3,9 @@ package com.ziggycrane.blueorange
 import android.app.Application
 import com.ziggycrane.blueorange.di.components.ApplicationComponent
 import com.ziggycrane.blueorange.di.components.DaggerApplicationComponent
-import com.ziggycrane.blueorange.di.modules.ApiModule
-import com.ziggycrane.blueorange.di.modules.ApplicationModule
+import com.ziggycrane.blueorange.di.modules.activity.ActivityModule
+import com.ziggycrane.blueorange.di.modules.app.ApiModule
+import com.ziggycrane.blueorange.di.modules.app.ApplicationModule
 
 
 /**
@@ -13,13 +14,9 @@ import com.ziggycrane.blueorange.di.modules.ApplicationModule
 
 class BlueOrangeApplication : Application() {
 
+    lateinit var component: ApplicationComponent
+
     private lateinit var context: BlueOrangeApplication
-
-    private var component: ApplicationComponent? = null
-
-    fun getComponent(): ApplicationComponent? {
-        return component
-    }
 
     override fun onCreate() {
         super.onCreate()
@@ -27,7 +24,7 @@ class BlueOrangeApplication : Application() {
         context = this
 
         initializeComponent()
-        getComponent()?.inject(this)
+        component.inject(this)
     }
 
     private fun initializeComponent() {

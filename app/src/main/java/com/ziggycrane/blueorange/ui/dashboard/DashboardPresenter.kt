@@ -1,10 +1,10 @@
 package com.ziggycrane.blueorange.ui.dashboard
 
 import android.content.Context
+import android.util.Log
 import com.ziggycrane.blueorange.data.preferences.BasePreferences
 import com.ziggycrane.blueorange.data.preferences.UserPreferences
 import com.ziggycrane.blueorange.di.ActivityContext
-import com.ziggycrane.blueorange.ui.auth.DashboardContract
 import com.ziggycrane.blueorange.ui.base.BasePresenter
 import com.ziggycrane.blueorange.utils.rx.SchedulerProvider
 import io.reactivex.disposables.CompositeDisposable
@@ -21,6 +21,7 @@ class DashboardPresenter<V : DashboardContract.View>
 
     override fun onAttach(mvpView: V) {
         super.onAttach(mvpView)
+
     }
 
     companion object {

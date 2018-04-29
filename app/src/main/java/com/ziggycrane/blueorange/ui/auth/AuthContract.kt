@@ -7,8 +7,6 @@ class AuthContract {
 
     interface View : BaseContract.BaseView {
 
-        fun openDashboardActivity()
-
     }
 
     @ActivityScope

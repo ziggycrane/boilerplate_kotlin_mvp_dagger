@@ -43,7 +43,6 @@ abstract class BaseDialog : DialogFragment(), BaseContract.BaseDialogView {
         if (context is BaseActivity) {
             val mActivity = context as BaseActivity?
             this.baseActivity = mActivity
-            baseActivity!!.showBlockingView()
             mActivity!!.onFragmentAttached()
         }
     }
@@ -79,7 +78,6 @@ abstract class BaseDialog : DialogFragment(), BaseContract.BaseDialogView {
     }
 
     override fun onDetach() {
-        baseActivity!!.hideBlockingView()
         baseActivity = null
         super.onDetach()
     }
