@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BlueOrange</string>
+    <string name="title_activity_auth">AuthActivity</string>
+
+    <string name="some_error_happened">Some error happened</string>
+    <string name="close">Close</string>
+</resources>
