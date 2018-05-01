@@ -36,30 +36,20 @@ class ActivityModule(private val activity: BaseActivity) {
 
     @Provides
     @ActivityScope
-    fun provideSplashPresenter(@ActivityContext context: Context,
-                               userPreferences: UserPreferences,
-                               schedulerProvider: SchedulerProvider,
-                               compositeDisposable: CompositeDisposable): SplashPresenter<SplashContract.View> {
-        return SplashPresenter(context, userPreferences, schedulerProvider, compositeDisposable)
+    fun provideSplashPresenter(presenter: SplashPresenter<SplashContract.View>): SplashContract.Presenter<SplashContract.View> {
+        return presenter
     }
 
     @Provides
     @ActivityScope
-    fun provideAuthPresenter(@ActivityContext context: Context,
-                             userPreferences: UserPreferences,
-                             schedulerProvider: SchedulerProvider,
-                             compositeDisposable: CompositeDisposable): AuthPresenter<AuthContract.View> {
-        return AuthPresenter(context, userPreferences, schedulerProvider, compositeDisposable)
+    fun provideAuthPresenter(presenter: AuthPresenter<AuthContract.View>): AuthContract.Presenter<AuthContract.View> {
+        return presenter
     }
 
     @Provides
     @ActivityScope
-    fun provideDashboardPresenter(@ActivityContext context: Context,
-                                  basePreferences: BasePreferences,
-                                  userPreferences: UserPreferences,
-                                  schedulerProvider: SchedulerProvider,
-                                  compositeDisposable: CompositeDisposable): DashboardPresenter<DashboardContract.View> {
-        return DashboardPresenter(context, basePreferences, userPreferences, schedulerProvider, compositeDisposable)
+    fun provideDashboardPresenter(presenter: DashboardPresenter<DashboardContract.View>): DashboardContract.Presenter<DashboardContract.View> {
+        return presenter
     }
 
     @Provides

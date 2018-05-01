@@ -36,7 +36,7 @@ class AuthActivity: BaseActivity(), AuthContract.View {
     lateinit var passwordErrorView: TextView
 
     @Inject
-    lateinit var presenter: AuthPresenter<AuthContract.View>
+    lateinit var presenter: AuthContract.Presenter<@JvmSuppressWildcards AuthContract.View>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

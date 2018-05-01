@@ -12,7 +12,7 @@ import javax.inject.Inject
 class SplashActivity : BaseActivity(), SplashContract.View {
 
     @Inject
-    lateinit var presenter: SplashPresenter<SplashContract.View>
+    lateinit var presenter: SplashContract.Presenter<@JvmSuppressWildcards SplashContract.View>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

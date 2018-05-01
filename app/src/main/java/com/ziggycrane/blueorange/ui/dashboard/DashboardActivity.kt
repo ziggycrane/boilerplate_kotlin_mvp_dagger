@@ -13,7 +13,7 @@ import javax.inject.Inject
 class DashboardActivity : BaseActivity(), DashboardContract.View {
 
     @Inject
-    lateinit var presenter: DashboardPresenter<DashboardContract.View>
+    lateinit var presenter: DashboardContract.Presenter<@JvmSuppressWildcards DashboardContract.View>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
