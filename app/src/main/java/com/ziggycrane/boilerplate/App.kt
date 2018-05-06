@@ -1,11 +1,11 @@
-package com.ziggycrane.blueorange
+package com.ziggycrane.boilerplate
 
 import android.app.Application
-import com.ziggycrane.blueorange.di.components.ApplicationComponent
-import com.ziggycrane.blueorange.di.components.DaggerApplicationComponent
-import com.ziggycrane.blueorange.di.modules.activity.ActivityModule
-import com.ziggycrane.blueorange.di.modules.app.ApiModule
-import com.ziggycrane.blueorange.di.modules.app.ApplicationModule
+import com.ziggycrane.boilerplate.di.components.ApplicationComponent
+import com.ziggycrane.boilerplate.di.components.DaggerApplicationComponent
+import com.ziggycrane.boilerplate.di.modules.activity.ActivityModule
+import com.ziggycrane.boilerplate.di.modules.app.ApiModule
+import com.ziggycrane.boilerplate.di.modules.app.ApplicationModule
 
 
 /**

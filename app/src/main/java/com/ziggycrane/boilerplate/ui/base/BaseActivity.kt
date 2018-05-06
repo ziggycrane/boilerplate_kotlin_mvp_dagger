@@ -1,17 +1,17 @@
-package com.ziggycrane.blueorange.ui.base
+package com.ziggycrane.boilerplate.ui.base
 
 import android.os.Bundle
 import android.support.annotation.StringRes
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.app.AppCompatDelegate
 import butterknife.Unbinder
-import com.ziggycrane.blueorange.BlueOrangeApplication
-import com.ziggycrane.blueorange.R
-import com.ziggycrane.blueorange.di.components.ActivityComponent
-import com.ziggycrane.blueorange.di.components.DaggerActivityComponent
-import com.ziggycrane.blueorange.di.modules.activity.ActivityModule
-import com.ziggycrane.blueorange.ui.error.ErrorDialogFragment
-import com.ziggycrane.blueorange.utils.NetworkUtils
+import com.ziggycrane.boilerplate.BlueOrangeApplication
+import com.ziggycrane.boilerplate.R
+import com.ziggycrane.boilerplate.di.components.ActivityComponent
+import com.ziggycrane.boilerplate.di.components.DaggerActivityComponent
+import com.ziggycrane.boilerplate.di.modules.activity.ActivityModule
+import com.ziggycrane.boilerplate.ui.error.ErrorDialogFragment
+import com.ziggycrane.boilerplate.utils.NetworkUtils
 
 abstract class BaseActivity : AppCompatActivity(), BaseContract.BaseView, BaseFragment.Callback {
 

@@ -1,10 +1,10 @@
-package com.ziggycrane.blueorange.data.preferences
+package com.ziggycrane.boilerplate.data.preferences
 
 import android.content.Context
 import android.content.SharedPreferences
 import com.google.gson.Gson
-import com.ziggycrane.blueorange.di.AppContext
-import com.ziggycrane.blueorange.di.qualifiers.PreferencesBase
+import com.ziggycrane.boilerplate.di.AppContext
+import com.ziggycrane.boilerplate.di.qualifiers.PreferencesBase
 import javax.inject.Inject
 
 class BasePreferences @Inject constructor(@AppContext context: Context, @PreferencesBase prefBaseName: String, private var gson: Gson) {

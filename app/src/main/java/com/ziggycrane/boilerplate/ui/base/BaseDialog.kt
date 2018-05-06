@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.ui.base
+package com.ziggycrane.boilerplate.ui.base
 
 import android.app.Dialog
 import android.content.Context
@@ -13,7 +13,7 @@ import android.view.ViewGroup
 import android.view.Window
 import android.widget.FrameLayout
 import butterknife.Unbinder
-import com.ziggycrane.blueorange.di.components.ActivityComponent
+import com.ziggycrane.boilerplate.di.components.ActivityComponent
 
 abstract class BaseDialog : DialogFragment(), BaseContract.BaseDialogView {
 

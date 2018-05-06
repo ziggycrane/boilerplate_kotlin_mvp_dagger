@@ -1,7 +1,7 @@
-package com.ziggycrane.blueorange.data.network.clients
+package com.ziggycrane.boilerplate.data.network.clients
 
 import com.google.gson.JsonObject
-import com.ziggycrane.blueorange.data.network.model.account.GetAccountListResponse
+import com.ziggycrane.boilerplate.data.network.model.account.GetAccountListResponse
 import io.reactivex.Observable
 import okhttp3.ResponseBody
 import retrofit2.Call

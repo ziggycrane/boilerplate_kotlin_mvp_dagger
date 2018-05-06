@@ -1,11 +1,11 @@
-package com.ziggycrane.blueorange.ui.splash
+package com.ziggycrane.boilerplate.ui.splash
 
 import android.content.Context
 import android.os.Handler
-import com.ziggycrane.blueorange.data.preferences.UserPreferences
-import com.ziggycrane.blueorange.di.ActivityContext
-import com.ziggycrane.blueorange.ui.base.BasePresenter
-import com.ziggycrane.blueorange.utils.rx.SchedulerProvider
+import com.ziggycrane.boilerplate.data.preferences.UserPreferences
+import com.ziggycrane.boilerplate.di.ActivityContext
+import com.ziggycrane.boilerplate.ui.base.BasePresenter
+import com.ziggycrane.boilerplate.utils.rx.SchedulerProvider
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 

@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.di
+package com.ziggycrane.boilerplate.di
 
 import java.lang.annotation.*
 

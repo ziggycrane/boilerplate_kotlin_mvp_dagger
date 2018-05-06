@@ -1,11 +1,11 @@
-package com.ziggycrane.blueorange.di.components
+package com.ziggycrane.boilerplate.di.components
 
-import com.ziggycrane.blueorange.ui.splash.SplashActivity
-import com.ziggycrane.blueorange.di.modules.activity.ActivityModule
-import com.ziggycrane.blueorange.di.scopes.ActivityScope
-import com.ziggycrane.blueorange.ui.auth.AuthActivity
-import com.ziggycrane.blueorange.ui.dashboard.DashboardActivity
-import com.ziggycrane.blueorange.ui.error.ErrorDialogFragment
+import com.ziggycrane.boilerplate.ui.splash.SplashActivity
+import com.ziggycrane.boilerplate.di.modules.activity.ActivityModule
+import com.ziggycrane.boilerplate.di.scopes.ActivityScope
+import com.ziggycrane.boilerplate.ui.auth.AuthActivity
+import com.ziggycrane.boilerplate.ui.dashboard.DashboardActivity
+import com.ziggycrane.boilerplate.ui.error.ErrorDialogFragment
 import dagger.Component
 
 @ActivityScope

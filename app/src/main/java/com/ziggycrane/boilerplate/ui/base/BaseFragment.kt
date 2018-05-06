@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.ui.base
+package com.ziggycrane.boilerplate.ui.base
 
 import android.app.ProgressDialog
 import android.content.Context
@@ -7,8 +7,8 @@ import android.support.annotation.StringRes
 import android.support.v4.app.Fragment
 import android.view.View
 import butterknife.Unbinder
-import com.ziggycrane.blueorange.di.components.ActivityComponent
-import com.ziggycrane.blueorange.utils.CommonUtils
+import com.ziggycrane.boilerplate.di.components.ActivityComponent
+import com.ziggycrane.boilerplate.utils.CommonUtils
 
 
 abstract class BaseFragment : Fragment(), BaseContract.BaseView {

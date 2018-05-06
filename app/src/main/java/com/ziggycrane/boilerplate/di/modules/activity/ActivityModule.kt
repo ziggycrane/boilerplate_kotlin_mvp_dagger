@@ -1,20 +1,20 @@
-package com.ziggycrane.blueorange.di.modules.activity
+package com.ziggycrane.boilerplate.di.modules.activity
 
 import android.content.Context
 import android.support.v7.widget.LinearLayoutManager
-import com.ziggycrane.blueorange.data.preferences.BasePreferences
-import com.ziggycrane.blueorange.data.preferences.UserPreferences
-import com.ziggycrane.blueorange.di.ActivityContext
-import com.ziggycrane.blueorange.di.scopes.ActivityScope
-import com.ziggycrane.blueorange.ui.auth.*
-import com.ziggycrane.blueorange.ui.base.BaseActivity
-import com.ziggycrane.blueorange.ui.dashboard.DashboardContract
-import com.ziggycrane.blueorange.ui.dashboard.DashboardPresenter
-import com.ziggycrane.blueorange.ui.error.ErrorDialogContract
-import com.ziggycrane.blueorange.ui.error.ErrorDialogPresenter
-import com.ziggycrane.blueorange.ui.splash.SplashContract
-import com.ziggycrane.blueorange.ui.splash.SplashPresenter
-import com.ziggycrane.blueorange.utils.rx.SchedulerProvider
+import com.ziggycrane.boilerplate.data.preferences.BasePreferences
+import com.ziggycrane.boilerplate.data.preferences.UserPreferences
+import com.ziggycrane.boilerplate.di.ActivityContext
+import com.ziggycrane.boilerplate.di.scopes.ActivityScope
+import com.ziggycrane.boilerplate.ui.auth.*
+import com.ziggycrane.boilerplate.ui.base.BaseActivity
+import com.ziggycrane.boilerplate.ui.dashboard.DashboardContract
+import com.ziggycrane.boilerplate.ui.dashboard.DashboardPresenter
+import com.ziggycrane.boilerplate.ui.error.ErrorDialogContract
+import com.ziggycrane.boilerplate.ui.error.ErrorDialogPresenter
+import com.ziggycrane.boilerplate.ui.splash.SplashContract
+import com.ziggycrane.boilerplate.ui.splash.SplashPresenter
+import com.ziggycrane.boilerplate.utils.rx.SchedulerProvider
 
 import dagger.Module
 import dagger.Provides

@@ -1,12 +1,12 @@
-package com.ziggycrane.blueorange.ui.dashboard
+package com.ziggycrane.boilerplate.ui.dashboard
 
 import android.content.Context
 import android.util.Log
-import com.ziggycrane.blueorange.data.preferences.BasePreferences
-import com.ziggycrane.blueorange.data.preferences.UserPreferences
-import com.ziggycrane.blueorange.di.ActivityContext
-import com.ziggycrane.blueorange.ui.base.BasePresenter
-import com.ziggycrane.blueorange.utils.rx.SchedulerProvider
+import com.ziggycrane.boilerplate.data.preferences.BasePreferences
+import com.ziggycrane.boilerplate.data.preferences.UserPreferences
+import com.ziggycrane.boilerplate.di.ActivityContext
+import com.ziggycrane.boilerplate.ui.base.BasePresenter
+import com.ziggycrane.boilerplate.utils.rx.SchedulerProvider
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 

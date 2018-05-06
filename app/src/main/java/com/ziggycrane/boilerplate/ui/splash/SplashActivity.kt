@@ -1,12 +1,12 @@
-package com.ziggycrane.blueorange.ui.splash
+package com.ziggycrane.boilerplate.ui.splash
 
 import android.content.Intent
 import android.os.Bundle
 import butterknife.ButterKnife
-import com.ziggycrane.blueorange.R
-import com.ziggycrane.blueorange.ui.dashboard.DashboardActivity
-import com.ziggycrane.blueorange.ui.auth.AuthActivity
-import com.ziggycrane.blueorange.ui.base.BaseActivity
+import com.ziggycrane.boilerplate.R
+import com.ziggycrane.boilerplate.ui.dashboard.DashboardActivity
+import com.ziggycrane.boilerplate.ui.auth.AuthActivity
+import com.ziggycrane.boilerplate.ui.base.BaseActivity
 import javax.inject.Inject
 
 class SplashActivity : BaseActivity(), SplashContract.View {

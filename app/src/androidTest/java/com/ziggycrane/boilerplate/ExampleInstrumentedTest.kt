@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange
+package com.ziggycrane.boilerplate
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

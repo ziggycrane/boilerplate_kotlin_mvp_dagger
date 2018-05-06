@@ -1,10 +1,10 @@
-package com.ziggycrane.blueorange.utils
+package com.ziggycrane.boilerplate.utils
 
 import android.app.ProgressDialog
 import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import com.ziggycrane.blueorange.R
+import com.ziggycrane.boilerplate.R
 import java.nio.charset.Charset
 import java.util.regex.Matcher
 import java.util.regex.Pattern

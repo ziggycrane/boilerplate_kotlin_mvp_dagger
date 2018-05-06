@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.ui.error
+package com.ziggycrane.boilerplate.ui.error
 
 import android.os.Bundle
 import android.support.v4.app.FragmentManager
@@ -9,8 +9,8 @@ import android.widget.TextView
 import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
-import com.ziggycrane.blueorange.R
-import com.ziggycrane.blueorange.ui.base.BaseDialog
+import com.ziggycrane.boilerplate.R
+import com.ziggycrane.boilerplate.ui.base.BaseDialog
 import javax.inject.Inject
 
 class ErrorDialogFragment : BaseDialog(), ErrorDialogContract.View {

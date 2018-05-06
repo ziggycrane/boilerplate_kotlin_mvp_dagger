@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.utils
+package com.ziggycrane.boilerplate.utils
 
 import android.content.Context
 import android.net.ConnectivityManager

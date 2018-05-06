@@ -1,6 +1,6 @@
-package com.ziggycrane.blueorange.ui.base
+package com.ziggycrane.boilerplate.ui.base
 
-import com.ziggycrane.blueorange.utils.rx.SchedulerProvider
+import com.ziggycrane.boilerplate.utils.rx.SchedulerProvider
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 

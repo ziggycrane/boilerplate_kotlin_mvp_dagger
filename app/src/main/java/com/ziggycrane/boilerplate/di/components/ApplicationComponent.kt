@@ -1,20 +1,20 @@
-package com.ziggycrane.blueorange.di.components
+package com.ziggycrane.boilerplate.di.components
 
 import android.content.Context
 import android.os.Handler
 import com.google.gson.Gson
-import com.ziggycrane.blueorange.BlueOrangeApplication
-import com.ziggycrane.blueorange.data.network.clients.AccountClient
-import com.ziggycrane.blueorange.data.preferences.BasePreferences
-import com.ziggycrane.blueorange.data.preferences.UserPreferences
-import com.ziggycrane.blueorange.di.AppContext
-import com.ziggycrane.blueorange.di.modules.activity.ActivityModule
-import com.ziggycrane.blueorange.di.modules.app.ApiModule
-import com.ziggycrane.blueorange.di.modules.app.ApplicationModule
-import com.ziggycrane.blueorange.di.qualifiers.BackgroundThread
-import com.ziggycrane.blueorange.di.qualifiers.MainThread
-import com.ziggycrane.blueorange.di.scopes.AppScope
-import com.ziggycrane.blueorange.utils.rx.SchedulerProvider
+import com.ziggycrane.boilerplate.BlueOrangeApplication
+import com.ziggycrane.boilerplate.data.network.clients.AccountClient
+import com.ziggycrane.boilerplate.data.preferences.BasePreferences
+import com.ziggycrane.boilerplate.data.preferences.UserPreferences
+import com.ziggycrane.boilerplate.di.AppContext
+import com.ziggycrane.boilerplate.di.modules.activity.ActivityModule
+import com.ziggycrane.boilerplate.di.modules.app.ApiModule
+import com.ziggycrane.boilerplate.di.modules.app.ApplicationModule
+import com.ziggycrane.boilerplate.di.qualifiers.BackgroundThread
+import com.ziggycrane.boilerplate.di.qualifiers.MainThread
+import com.ziggycrane.boilerplate.di.scopes.AppScope
+import com.ziggycrane.boilerplate.utils.rx.SchedulerProvider
 import dagger.Component
 import io.reactivex.disposables.CompositeDisposable
 

@@ -1,7 +1,7 @@
-package com.ziggycrane.blueorange.ui.dashboard
+package com.ziggycrane.boilerplate.ui.dashboard
 
-import com.ziggycrane.blueorange.di.scopes.ActivityScope
-import com.ziggycrane.blueorange.ui.base.BaseContract
+import com.ziggycrane.boilerplate.di.scopes.ActivityScope
+import com.ziggycrane.boilerplate.ui.base.BaseContract
 
 class DashboardContract {
 

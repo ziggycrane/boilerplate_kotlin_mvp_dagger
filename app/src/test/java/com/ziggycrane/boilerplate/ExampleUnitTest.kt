@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange
+package com.ziggycrane.boilerplate
 
 import org.junit.Test
 

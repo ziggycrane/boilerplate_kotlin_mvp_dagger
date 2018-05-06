@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.di.modules.app
+package com.ziggycrane.boilerplate.di.modules.app
 
 import android.app.Application
 import android.content.SharedPreferences
@@ -6,8 +6,8 @@ import android.preference.PreferenceManager
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.ziggycrane.blueorange.data.network.clients.AccountClient
-import com.ziggycrane.blueorange.di.scopes.AppScope
+import com.ziggycrane.boilerplate.data.network.clients.AccountClient
+import com.ziggycrane.boilerplate.di.scopes.AppScope
 
 import java.lang.reflect.Modifier
 import java.util.concurrent.TimeUnit

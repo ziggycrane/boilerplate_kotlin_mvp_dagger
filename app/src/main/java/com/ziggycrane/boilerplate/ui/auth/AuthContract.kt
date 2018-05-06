@@ -1,8 +1,8 @@
-package com.ziggycrane.blueorange.ui.auth
+package com.ziggycrane.boilerplate.ui.auth
 
 import android.support.annotation.StringRes
-import com.ziggycrane.blueorange.di.scopes.ActivityScope
-import com.ziggycrane.blueorange.ui.base.BaseContract
+import com.ziggycrane.boilerplate.di.scopes.ActivityScope
+import com.ziggycrane.boilerplate.ui.base.BaseContract
 
 class AuthContract {
 

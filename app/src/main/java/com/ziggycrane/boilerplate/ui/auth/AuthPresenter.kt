@@ -1,13 +1,13 @@
-package com.ziggycrane.blueorange.ui.auth
+package com.ziggycrane.boilerplate.ui.auth
 
 import android.content.Context
 import android.util.Log
-import com.ziggycrane.blueorange.R
-import com.ziggycrane.blueorange.data.preferences.UserPreferences
-import com.ziggycrane.blueorange.di.ActivityContext
-import com.ziggycrane.blueorange.ui.base.BasePresenter
-import com.ziggycrane.blueorange.utils.HashUtils
-import com.ziggycrane.blueorange.utils.rx.SchedulerProvider
+import com.ziggycrane.boilerplate.R
+import com.ziggycrane.boilerplate.data.preferences.UserPreferences
+import com.ziggycrane.boilerplate.di.ActivityContext
+import com.ziggycrane.boilerplate.ui.base.BasePresenter
+import com.ziggycrane.boilerplate.utils.HashUtils
+import com.ziggycrane.boilerplate.utils.rx.SchedulerProvider
 import io.reactivex.Observable
 import io.reactivex.annotations.NonNull
 import io.reactivex.disposables.CompositeDisposable

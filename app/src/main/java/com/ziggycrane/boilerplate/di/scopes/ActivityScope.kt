@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.di.scopes
+package com.ziggycrane.boilerplate.di.scopes
 
 import javax.inject.Scope
 

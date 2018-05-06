@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.ui.auth
+package com.ziggycrane.boilerplate.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,9 +10,9 @@ import android.widget.TextView
 import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
-import com.ziggycrane.blueorange.R
-import com.ziggycrane.blueorange.ui.base.BaseActivity
-import com.ziggycrane.blueorange.ui.dashboard.DashboardActivity
+import com.ziggycrane.boilerplate.R
+import com.ziggycrane.boilerplate.ui.base.BaseActivity
+import com.ziggycrane.boilerplate.ui.dashboard.DashboardActivity
 import javax.inject.Inject
 
 class AuthActivity: BaseActivity(), AuthContract.View {

@@ -1,10 +1,10 @@
-package com.ziggycrane.blueorange.data.preferences
+package com.ziggycrane.boilerplate.data.preferences
 
 import android.content.Context
 import android.content.SharedPreferences
 import com.google.gson.Gson
-import com.ziggycrane.blueorange.di.AppContext
-import com.ziggycrane.blueorange.di.qualifiers.PreferencesUser
+import com.ziggycrane.boilerplate.di.AppContext
+import com.ziggycrane.boilerplate.di.qualifiers.PreferencesUser
 import javax.inject.Inject
 
 class UserPreferences {

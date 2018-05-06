@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.data.network.model.account
+package com.ziggycrane.boilerplate.data.network.model.account
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

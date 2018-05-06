@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.ui.base
+package com.ziggycrane.boilerplate.ui.base
 
 import android.support.annotation.StringRes
 import android.support.v4.app.FragmentManager

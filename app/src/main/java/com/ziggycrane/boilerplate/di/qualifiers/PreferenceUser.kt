@@ -1,4 +1,4 @@
-package com.ziggycrane.blueorange.di.qualifiers
+package com.ziggycrane.boilerplate.di.qualifiers
 
 import javax.inject.Qualifier
 
